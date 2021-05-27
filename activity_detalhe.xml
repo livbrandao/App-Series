@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".DetalheActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_detalhe_imagem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/witcher"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/id_detalhe_titulo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_detalhe_titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="casual"
+        android:text="Título"
+        android:textColor="#FFDDD3"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_detalhe_num_temp"
+        android:layout_width="170dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="casual"
+        android:text="Nº Temporadas: "
+        android:textAlignment="gravity"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_detalhe_titulo" />
+
+    <TextView
+        android:id="@+id/id_detalhe_sinopse"
+        android:layout_width="286dp"
+        android:layout_height="312dp"
+        android:layout_margin="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="casual"
+        android:text="Sinopse"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_detalhe_num_temp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
